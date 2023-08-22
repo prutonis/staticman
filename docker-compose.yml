@@ -7,9 +7,54 @@ services:
       - '8080:3000'
     restart: unless-stopped
     environment:
-      NODE_ENV: production
+      NODE_ENV: prod
       PORT: 3000
       GITHUB_TOKEN: #insert your GitHub token here
+      GITHUB_APP_ID: 377276
+      GITHUB_PRIVATE_KEY: |
+        -----BEGIN RSA PRIVATE KEY-----
+        MIIEogIBAAKCAQEAvOxB7Hz3vx9JNUTzoOsOICTQkfPm5WhwNolawZBRN4jREr1x
+        4/DVJNy1PW29DOObEvrxHTvKPGk0J/ybuxjXsAeDwC+u+DtW79U+n+Zudth7Ft5k
+        lsDmv5uEp6UsaSLAhDL9ZU2K69lJYXWYuH/WukWK/gtygg3IQCjTQDd8s0zVgTDh
+        yoboBS5fnosm7aftOpwyk92LfULJ4dP6UxiABtSV4jVhQuF7Yd9xOyNt/EJpDBbK
+        87Z49bRo1PJYR9zkHfoWVoyduPAa8Vng05V6K7QoJdVQq1zNeGTNeVeKYuEoI0Vk
+        WvFPXuWjP8dBIPDW/6KmzXoCRyPGWh2iG2UIdwIDAQABAoIBAHwsvdf2+9A/fBrr
+        S0cFuK8gA4crTSSUVM1D0sdPWFKsNt+ebXFpJm+oMehCbPQ/1fnPvxN77R1v+Lwf
+        qSx806f8CHkV3meCeU4CV7s59nlfKOiLHIqKGCDw02xtgJdKJEfATBV9tkX29+h7
+        Jvp97GFavFTmqUkaTfj93Hxk/C3MvYju7jP4LUPi/cAPwjrOksWWauddZMM+2uTf
+        IVzQxi96zSBwqR1HJ7yrkTzifxk9JGdOS1E0NMbpuOzYF3KQE4JpsV39rsfMSien
+        qkcM5gGkMsXOsdnDtMQFfp5QgFSjp+VBH8qmZFw3qmKd53nxyBsERfJpqmQ3uFkO
+        uHYACyECgYEA4WHtkSLvrbwV1sc4YQ6yoXzsVL+FaHsmsYV6AprQnKyto+t+1R0w
+        KsxQYpG49vK303nvPpQ9lt7DDlJ8987ed9U/VFay0eYAyY/JqFFrsGL5iI0OEWOt
+        ihupvfc8XxkuZCf4fRm5s294rZWIdctQ1KhkxWSBT/y4dj4K5o5GyLsCgYEA1pZh
+        oSETMOUuTMZpmql9hgFJjJcVDTSgnGpdZrwww5FMEsYEfIR+V3qnMr6xfuIyhfM5
+        GacNZgFd5a3WFFC6HSgDHvMXRA26dhXWw61Qb2NaM7UzaVqGyctN6G2kyvsh0yqf
+        0ErbDA1OijPJupN+9DcrzuAwppuEOPmV68GmsXUCgYBUZZRNXfS8bQsMg0tkZNmV
+        SS9CSPmO91a08ROQOCLYGH1pPX0gFq77x8huML0/lAIsKaPiHia2ATKvgUoUjZ2W
+        5/6v+Us6+FLhJ3vPELYvtdBVRuS2tEm+xr8YSKWNwuMxVBpj1idIvvxEnBMecQUS
+        rQAXPpyBtFPqyy7PyQVOkwKBgDtXDJptNgxgZARRHeTqF88Vzgv1v5mOQxfeBgQh
+        6G48YMgUQCtazEFOpqvOtfC7hnMqRlEEtBzQJfIct0WY6U6kwPAvEvD7xuNeuKwV
+        4ldbJxeDdTseEIX/FYU/xMFo3vqxH86O1LIpf92R4qgYn5PTKeckce+ws8i5pC60
+        t279AoGASRhRPeTOCAU1of3avqFDAkuFijECewsB8EfB/oyJ5y+asraFrCH9A0eQ
+        n3ZaQ/eAF08brlmtXi6vwHM0Ci45QGPL8DemsXHBJQsIp9TFuhLBKt85O7RdV8+U
+        p4ww/rzChG7fxurppuw4qB6YZiMjs3uQRT6jWF670jHZASrWr70=
+        -----END RSA PRIVATE KEY-----
+
       RSA_PRIVATE_KEY: |
+        -----BEGIN RSA PRIVATE KEY-----
+        MIICWwIBAAKBgHnPuYriRQzGQddNHwS6GbDyU5ywiDkNMDktYgDz9C3dEAzWHFtb
+        PhPXkz53Wv6pT2UqDSYyxDKyxQrDw3+yeAVTqWGpP2AO5b+QPz1DDjr8VHzX4TEd
+        QMTjhRB/vCC9ipHWifFS+hQZrnwB/3mGpx5moArqWeCl6P18J+lJWly1AgMBAAEC
+        gYBUI9VBBty1XzjZlE7pv/bBEBILOLFP3zlBNYTtrZUsHPfaNgduX084+36c9mrn
+        X2IVOf/NM+HsNyn+Lo0a5tcZtAwfEDsYUf8tsGdhZWHVVXbzaX1oU9QKGELn6zXS
+        25uHHxD5+uhXJcl2kl1nRtapBkny9Ij1PZVuJZrz61HeHQJBAN+p2iCR9YKDwJw5
+        LA1KxWa+mnQ4ldP+Vy4VtuDraPlVlnnZi4V7EmmxK6FvcG2fTYs/geYZaG8K0dI1
+        zs8N+I8CQQCLbCm4P0CGYUM08CHdlpCxb2b1fL8tesmdC2mUD4/5jgoodruF7G6h
+        xlsYNLsHKSuZRPFT2nEbxULtvQE/tRB7AkEAq/TYYQYWrTtCUFmcRrPfxLhx4zzF
+        5HC88g97xLz4vglRYWkh3YPbiirOkpUs6Pr7ET3ITvHl2smEu4rm70WcfQJAYjiv
+        I4gcEw+OY0sQ8KTUBsyuwh9CJ+4q/yI9HPvhuDPi4CLVdUHdpsaxAlqTsDXG61Fw
+        mlx39tJ/ljDjIliS5QJASp1rs+Ewzj8qwZ44/v5H6ea/lI85qmheFnVoCpm29Iv9
+        55zC/FguXLIubU3qHqSW6BH1U+tMMYT5Cr/9vwFg7g==
+        -----END RSA PRIVATE KEY-----
 #        RSA private key to encrypt sensitive configuration parameters with.
 #        the correct format starts with "-----BEGIN RSA PRIVATE KEY-----"
